@@ -2,6 +2,8 @@ from uuid import uuid4
 from datetime import datetime
 import time
 import math
+import random
+import string
 
 
 
@@ -82,15 +84,15 @@ def date_time():
 def math_op():
      while True:
         print()
-        print("======================================")
+        print("="*10)
         print("Mathematical Operations :")                  
-        print("======================================")    
+        print("="*10)    
         print("1. Calculate Factorial")              
         print("2. Solve Compound Interest")              
         print("3. Trigonmetric Calculation")              
         print("4. Area of Geometric Shapes")              
         print("5. Back to Main Menu ")
-        print("=================================================")
+        print("="*10)
 
 
         choice=int(input("Enter your Choice :"))
@@ -98,7 +100,7 @@ def math_op():
         if choice==1:
              fact=int(input("Enter a Number For Factorial :"))
              print(f"Factorial of {fact} is : {math.factorial(fact)}")
-             print("=================================================")
+             print("="*10)
 
         elif choice==2:
              money=int(input("Enter Principle Amount :"))
@@ -106,14 +108,27 @@ def math_op():
              year=int(input("Enter time (in years)"))
              cp=money*(1+interest/100)**year
              print(f"Compound Interest : {cp}")
-             print("=================================================")
+             print("="*10)
         elif choice==3:
-             pass
-             print("=================================================")
+             value=float(input("Enter a Value :"))
+             value=math.radians(value)
+             print(f"Sin : {math.sin(value)}")
+             print(f"Cos : {math.cos(value)}")
+             print("="*10)
         
         elif choice==4:
-             pass
-             print("=================================================")
+             print("Select an Option :")
+             print("1. Circle's Area ")
+             print("2. Recttangle's Area ")
+             r=int(input("Enter Your Choice :"))
+             if r==1:
+               a=float(input("Enter  Radius:"))
+               area=math.pi*a*a
+               print(f"Area of Circle : {area}")
+             elif r==2:
+                  l=float(input("Enter l : "))
+                  b=float(input("Enter b  :"))
+                  print(f"Area of Rectangle : {l*b}")
         
         elif choice==5:
              print("Going Back To Main Menu......")
@@ -141,8 +156,39 @@ def uu_id():
         else:
              print("Invalid Choice (1-2)!!")
      
-     
 
+def random_op():
+     while True:
+          print()
+          print("===============================")
+          print("Random Data Generations")
+          print("===============================")
+          print("1. Generate Random Number")
+          print("2. Generate Random List ")
+          print("3. Create Random Password")
+          print("4. Generate Random OTP")
+          print("5. Back to Main Menu")
 
+          choice=int(input("Enter Your Choice : "))
 
+          if choice==1:
+               num= random.randint(1,100)
+               print(f" Random Number : {num}")
+          elif choice==2:
+               l=[20,98,41,35,18,14,61,35]
+               li=list(random.shuffle(l))
+               print(f"Random list : {li}")
+          elif choice==3:
+               leng=int(input("Enter Length of Password : "))
+               a=string.ascii_letters + string.punctuation + string.digits
+               password="".join(random.choices(a,k=leng))
+               print(f" Generated Password : {password}")
+          elif choice==4:
+               otp=random.randrange(100000,999999)
+               print(f" Random 6 Digit OTP : {otp}")
+          elif choice==5:
+               print("Going Back to Main Menu......")
+               break
+          else:
+               print("Invalid Choice (1-5)")
                   
