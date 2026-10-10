@@ -87,7 +87,7 @@ def math_op():
         print()
         print("=="*20)
         print("Mathematical Operations :")                  
-     print("=="*20)
+        print("=="*20)
         print("1. Calculate Factorial")              
         print("2. Solve Compound Interest")              
         print("3. Trigonmetric Calculation")              
