@@ -1,6 +1,7 @@
 def explore_module():
     while True:
-        print("="*10)
+        print()
+        print("=="*20)
         print("Explore Module Attributes :")
         print("1. Math's Module")
         print("2. Datetime's Module ")
@@ -10,7 +11,7 @@ def explore_module():
         print("6. String's Module ")
         print("7. Back To Main Menu ")
 
-        print("="*10)
+        print("=="*20)
 
         choice=int(input("Enter your  Choice : "))
 
