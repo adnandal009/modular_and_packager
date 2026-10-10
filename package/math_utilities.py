@@ -9,6 +9,7 @@ import string
 
 def date_time():
         while True:
+            print("=="*20)
             print("Date and Time Operations :")
             print("1. Display Current Date and Time :")
             print("2. Calculate Differnce Between Two Dates/Times : ")
@@ -84,18 +85,19 @@ def date_time():
 def math_op():
      while True:
         print()
-        print("="*10)
+        print("=="*20)
         print("Mathematical Operations :")                  
-        print("="*10)    
+     print("=="*20)
         print("1. Calculate Factorial")              
         print("2. Solve Compound Interest")              
         print("3. Trigonmetric Calculation")              
         print("4. Area of Geometric Shapes")              
         print("5. Back to Main Menu ")
-        print("="*10)
+        print("=="*20)
 
 
         choice=int(input("Enter your Choice :"))
+        print()
 
         if choice==1:
              fact=int(input("Enter a Number For Factorial :"))
@@ -140,12 +142,13 @@ def math_op():
 def uu_id():
      while True:
         print()
-        print("=================================")
+        print("=="*20)
         print("Unique Identifiers ")
-        print("=================================")
+        print("=="*20)
         print("Select an Option")
         print("1. Generate a Unique ID")
         print("2. Back to Menu")
+        print()
         ch=int(input("Enter Your Choice :"))
         if ch==1:
             a=uuid4()
@@ -160,15 +163,15 @@ def uu_id():
 def random_op():
      while True:
           print()
-          print("===============================")
+          print("=="*20)
           print("Random Data Generations")
-          print("===============================")
+          print("=="*20)
           print("1. Generate Random Number")
           print("2. Generate Random List ")
           print("3. Create Random Password")
           print("4. Generate Random OTP")
           print("5. Back to Main Menu")
-
+          print()
           choice=int(input("Enter Your Choice : "))
 
           if choice==1:
@@ -176,8 +179,8 @@ def random_op():
                print(f" Random Number : {num}")
           elif choice==2:
                l=[20,98,41,35,18,14,61,35]
-               li=list(random.shuffle(l))
-               print(f"Random list : {li}")
+               random.shuffle(l)
+               print(f"Random list : {l}")
           elif choice==3:
                leng=int(input("Enter Length of Password : "))
                a=string.ascii_letters + string.punctuation + string.digits

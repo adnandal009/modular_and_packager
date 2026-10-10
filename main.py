@@ -8,10 +8,10 @@ from package import random_op
 
 def main():
     while True:
-
-        print("=================================")
+        print()
+        print("=="*20)
         print("Welcome to Multi-Utility Toolkit ")
-        print("=================================")
+        print("=="*20)
         print()
         print("Choose an Option:")
         print("1.Datetime and Time Operattions")
@@ -21,11 +21,16 @@ def main():
         print("5. File Operations (Custom Module)")
         print("6. Explore Module Attributes (dir())")
         print("7. Exit ")
-        print("=================================")
+        print("=="*20)
+        print("=="*20)
+        print()
 
         choice=int(input("Enter your choice : "))
+
         if choice==1:
+            print("=="*20)
             date_time()
+            print("=="*20)
         elif choice==2:
             math_op()
         elif choice==3:

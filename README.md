@@ -184,10 +184,11 @@ Enter module name: math
 ## Project Structure
 
 ```text
-Modular-and-Packager/
+
 ├── package/
 │   ├── explore_modules.py
 │   ├── file_utilities.py
+│   ├── __init__.py
 │   └── math_utilities.py
 │
 ├── main.py
@@ -199,16 +200,6 @@ Adjust the filenames above to match your actual project structure. If you
 want Python to treat `package/` as a regular package, you can also add an
 empty `__init__.py` file inside it.
 
-## Module Descriptions
-
-| File                 | Purpose                                                   |
-|----------------------|-----------------------------------------------------------|
-| `main.py`            | Entry point. Displays menus and routes user choices.      |
-| `math_utilities.py`  | Contains the mathematical operations.                     |
-| `file_utilities.py`  | Contains file creation, reading, writing, and deletion.   |
-| `explore_modules.py` | Uses `dir()` to list the attributes of a chosen module.   |
-| `output.png`         | Screenshot of the program running.                        |
-| `README.md`          | Project documentation.                                    |
 
 ### How the Modules Connect
 
@@ -249,25 +240,6 @@ Depending on the implementation, this project can demonstrate:
 - File operations
 - Module introspection with `dir()`
 - Version control with Git and GitHub
-
-## Troubleshooting
-
-| Problem                          | Possible Fix                                           |
-|----------------------------------|--------------------------------------------------------|
-| `python` is not recognized       | Reinstall Python and tick "Add Python to PATH".        |
-| `ModuleNotFoundError: package`   | Run the program from the project's root folder.        |
-| Date input is rejected           | Use the `YYYY-MM-DD` format, for example `2026-02-09`. |
-| Menu does not accept a choice    | Enter only the number shown beside the option.         |
-| File operation fails             | Check that the file name and path are correct.         |
-
-## Future Improvements
-
-- Add a graphical interface using Tkinter.
-- Save a history of calculations and generated data.
-- Add unit tests with `unittest` or `pytest`.
-- Add more math operations such as statistics and unit conversion.
-- Support more date formats.
-- Add colored terminal output for better readability.
 
 ## Output
 
