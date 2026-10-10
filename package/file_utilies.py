@@ -104,4 +104,4 @@ def file_op():
             print("Going Back to Main Menu....")
             break
         else:
-            print("Invalid Choice (1-5)")
+            print("Invalid Choice (1-6)")
